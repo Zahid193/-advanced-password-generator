@@ -1,140 +1,74 @@
-# 🔐 Advanced Password Generator (Python CLI Tool)
+# 🔐 Advanced Password Generator
 
-A secure, customizable, and production-style password generator built with Python.
-This tool uses **cryptographically secure randomness** to generate strong and unpredictable passwords suitable for real-world applications.
+## 📌 Overview
+
+This project is a Python-based advanced password generator designed to create secure and customizable passwords.
+
+It demonstrates key cybersecurity concepts such as randomness, password strength, and secure generation techniques.
 
 ---
 
 ## 🚀 Features
 
-* Generate strong and secure passwords
-* Customizable password length
-* Toggle character types:
+* Generate multiple passwords at once
+* Customizable options:
 
-  * Uppercase letters (A–Z)
-  * Lowercase letters (a–z)
-  * Digits (0–9)
-  * Symbols (!@#$%^&* etc.)
-* Ensures at least one character from each selected category
-* Password strength checker (Weak / Medium / Strong)
-* Save generated passwords to a file
-* Command-line interface (CLI using argparse)
+  * Uppercase letters
+  * Numbers
+  * Special symbols
+* Password strength indicator (Weak / Medium / Strong)
+* Saves generated passwords to a file
+* User-friendly command-line interface
 
 ---
 
-## 🧠 Security Focus
+## 🛠️ Technologies Used
 
-This project uses Python’s **`secrets` module** instead of `random`, ensuring:
-
-* Cryptographic-level security
-* Unpredictable password generation
-* Suitable for real-world usage
+* Python
+* Random module
+* String module
 
 ---
 
-## 🛠️ Tech Stack
+## ▶️ How to Run
 
-* Python 3
-* `secrets` module
-* `argparse`
-* `string` module
+```bash
+python password_generator.py
+```
 
----
+Follow the prompts:
 
-## 📦 Installation
-
-1. Clone the repository:
-
-git clone https://github.com/Zahid193/advanced-password-generator.git
-cd advanced-password-generator
-
-2. Run the script:
-
-python generator.py
+* Enter password length
+* Choose character types
+* Select number of passwords
 
 ---
 
-## ⚙️ Usage
+## 📊 Example Output
 
-### Default Usage
-
-python generator.py
-
-### Custom Password
-
-python generator.py --length 16 --upper --lower --digits --symbols
-
-### Save Password to File
-
-python generator.py --length 12 --digits --symbols --save passwords.txt
+```
+1. A$k9dL!2mQ --> Strong
+2. f8G@hK2!pL --> Strong
+```
 
 ---
 
-## 📸 Example Output
+## 🧠 Project Logic
 
-Generated Password: G#7kL!9pQ@2xZ1
-Strength: Strong
-Saved to passwords.txt
-
----
-
-## 🔍 Password Strength Criteria
-
-| Strength | Conditions                               |
-| -------- | ---------------------------------------- |
-| Weak     | Short length or limited character types  |
-| Medium   | Moderate length with some variation      |
-| Strong   | 12+ length with multiple character types |
-
----
-
-## 📁 Project Structure
-
-advanced-password-generator/
-│
-├── generator.py
-├── README.md
-└── .gitignore
-
----
-
-## 🔮 Future Improvements
-
-* GUI version (Tkinter)
-* Clipboard copy feature
-* Password entropy calculation
-* Web version using Flask
-* Password manager integration
+* Uses Python's random module to generate unpredictable passwords
+* Builds a character pool dynamically based on user input
+* Evaluates password strength based on length
+* Supports batch generation for efficiency
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is created for **educational purposes only**.
-Do not use this tool for unauthorized access, hacking, or any illegal activities.
-The author is not responsible for any misuse of this software.
+This tool is created for educational purposes only. Do not use it for illegal activities.
 
 ---
 
-## 👨‍💻 Author
+## 👤 Author
 
-**Zahid Qureshi**
-
+Zahid Qureshi
 GitHub: https://github.com/Zahid193
-
----
-
-## ⭐ Support
-
-If you found this project helpful:
-
-* Star the repository
-* Fork it
-* Share it
-
----
-
-## 📌 Project Status
-
-Active
-Open for improvements
